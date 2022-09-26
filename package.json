@@ -2,5 +2,8 @@
   "dependencies": {
     "my": "^0.3.3",
     "package": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.3"
   }
 }
