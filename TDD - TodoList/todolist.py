@@ -7,6 +7,7 @@ class TodoList:
 
     def add(self, todoitem):
         self.list.append(todoitem)
+        self.sort()
 
     def remove(self, index):
         self.list.pop(index)
@@ -27,3 +28,9 @@ class TodoList:
     
     def getListSize(self):
         return len(self.list)
+
+    def sort(self):
+        self.list.sort()
+
+    def changePriority(self, newPriority):
+        self.priority
