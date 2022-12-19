@@ -1,6 +1,5 @@
 from src.entities.errors.duplicateitemerror import DuplicateItemError
 
-
 class TodoList:
     def __init__(self, owner):
         self.owner = owner
@@ -29,6 +28,13 @@ class TodoList:
 
     def remove(self, index):
         self.list.pop(index)
+
+    def remove_by_description(self, description):
+        list_size = len(self.list)
+        for index in range(list_size):
+            if(self.list[index].description == description):
+                self.remove(index)
+                return
 
     def size(self):
         return len(self.list)
